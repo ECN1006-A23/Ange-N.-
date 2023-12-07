@@ -8,70 +8,168 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&display=swap" rel="stylesheet">
     />
     <style>
       body {
         font-family: "Times New Roman", Times, serif;
-        background: white;
+        color:rgb(252, 247, 242);
       }
       h1 {
-        color: white;
-        font-size: 55px;
+        background-image: url(https://images.unsplash.com/photo-1544185310-0b3cf501672b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        padding: 150px 50px 150px;
+       
+        opacity: 0.85;
+        font-size: 75px;
+        color: aliceblue;
         text-align: center;
-        font-weight: 100;
+        font-weight: 1000;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-image: linear-gradient(to right, #82a3ad, rgb(225, 129, 99));
-        padding: 100px;
         font-family: "Roboto", sans-serif;
-        text-shadow: 20px, 20px, 20px rgba(0, 0, 0, 0.8);
       }
+
+      h2 {
+        font-size: 35px;
+        background: linear-gradient(90deg, #dbc5ab 80%, #ede7e1 60%);
+
+        margin-left: 5px;
+        font-weight: 100p;
+        color: #4f2109;
+        padding: 30px 7px 30px;
+        font-family: "Roboto", sans-serif;
+        display: block;
+      }
+      
+      .haut  {
+        background-color: rgb(188, 162, 133);
+        opacity: 0.7;
+        padding: 10px 15px 20px;
+        display: block;
+      }
+      .milieu {
+        background-color: rgb(102, 119, 92);
+        position: relative;
+        display: block;
+        min-height: 350px;
+      }
+      
+
+      .image1 {
+      float: right;
+      
+      }
+      .bottom-right {
+       position: absolute;
+       bottom: 8px;
+       right: 16px;
+       text-align: right;
+       }
       .paragraphe1 {
-        color: rgb(34, 102, 141);
+        color: #ede7e1;
+        display: block;
+        font-size: 28px;
+        margin: 0px 35px 0px;
+        font-family: "Nanum", sans-serif;
+        
       }
       .paragraphe2 {
-        color: rgb(34, 102, 141);
+        color: rgb(142, 117, 77);
+        display: block;
+        font-size: 28px;
+        margin: 0px 200px 0px;
+        font-family: "Nanum", sans-serif;
       }
       .paragraphe3 {
-        color: rgb(34, 102, 141);
+        margin-top: 15;
+        display: block;
+        color: white;
+        font-size: 38px;
+        padding: 28px 150px 28px;
+        font-family: "Nanum", sans-serif;
+
       }
       .paragraphe4 {
-        color: rgb(34, 102, 141);
+       color: rgb(142, 117, 77);
+        display: block;
+        margin: 0px 200px 0px;
+        font-size: 28px;
+        font-family: "Nanum", sans-serif;
       }
       .paragraphe5 {
-        color: rgb(34, 102, 141);
+        color: rgb(142, 117, 77);
+        display: block;
+        margin: 45px 200px 0px;
+        font-size: 28px;
+        font-family: "Nanum", sans-serif;
       }
+      .paragraphe6{
+        color: #ede7e1;
+        display: block;
+        margin: 45px 60px 0px;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Nanum", sans-serif;
+      }
+
       li {
-        color: rgb(34, 102, 141);
+        color: #ede7e1;
+      }
+      .questionnaire {  
+         
+        background-position: 34% -95%;
+        background: linear-gradient(280deg,rgb(188, 162, 133) 17%, rgba(0, 0, 0, 0) 17% ), url('https://images.unsplash.com/photo-1544185310-0b3cf501672b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3');
+        opacity: 0.85;
+        padding: 2px 0px 0px;
+        background-position: 5% -125%;
+        
+
       }
       button {
+        width: 200px;
+        padding: 15px 0;
         display: block;
-        margin: 20px auto;
-        color: rgb(39, 25, 247);
-        font-size: 20px;
-        background: cyan;
-        padding: 15px 20px;
-        border-color: aquamarine;
+        box-shadow: rgb(99, 80, 55) 2px 9px 20px;
+        margin: auto;
+        text-align: center;
+        margin: 20px 10;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid rgb(99, 109, 74);
+        background: transparent;
+        color: #fff;
         cursor: pointer;
-        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-        border: 1px black solid;
-        border-radius: 7px;
+        position: relative; 
+        overflow: hidden;
+      }
+      span {
+        background: rgb(99, 109, 74);
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+      }
+      button:hover span{
+        width: 100%
       }
       button:hover {
-        background-color: aquamarine;
+        border: none;
       }
-      img {
-        width: 500px;
-        display: block;
-        margin: 0 auto;
-      }
+     
       a:visited {
       }
     </style>
   </head>
   <body>
     <h1>La lecture numérique : une meilleure alternative</h1>
-    <h2>L'évoltuion des médiums de lecture</h2>
+    <div class= "haut">
+     <h2><strong> L'évolution des médiums de lecture</strong></h2>
     <p class="paragraphe1">
       La baisse de lecteurs tant chez les jeunes que chez les adultes est un
       phénomène inquiétant observable depuis des décennies. Les divertissements
@@ -80,15 +178,15 @@
       par s’adapter et se diversifier avec le temps. Ainsi, la lecture numérique
       est devenue une meilleure alternative à la lecture traditionnelle sur
       plusieurs points. Ce texte mettra en lumière ses avantages par rapport à
-      la lecture sur papier.
+      la lecture sur papier. 
+    </div>
     </p>
     <p class="paragraphe2">
       Pour commencer, les interfaces dynamiques qu’elles présentent augmentent
       le niveau d’enthousiasme de ses lecteurs par rapport à elles. Pour
       expliquer cela, une étude menée par Naomi S. Baron sur un groupe
       d’étudiant a relevé que « De manière inattendue, plusieurs étudiants ont
-      dit que la lecture sur papier était ennuyeuse. » (Traduit en français,
-      Baron, 2020). Sylvie Octobre a aussi décrit la génération Z dans son livre
+      dit que la lecture sur papier était ennuyeuse. » (traduit de l'anglais)(Baron, 2020). Sylvie Octobre a aussi décrit la génération Z dans son livre
       intitulé La lecture à l’ère du numérique de cette manière : « Elle a
       grandi dans un monde d’images et de son, dans lequel elle a appris le
       décodage visuel, c’est-à-dire la mise en mots des implicites des images… »
@@ -100,6 +198,15 @@
       victime d’une négligence par plusieurs membres de cette nouvelle
       génération adepte de contenus audio-visuels.
     </p>
+    <div class="milieu">
+    <div class="image1">
+      <img src= "https://perfectionnement.polymtl.ca/wp-content/uploads/menard-jf.jpg" 
+      height= "350"
+      width= "300"/>
+      <div 
+      class="bottom-right"> Jean-François Ménard: analyste <br>principale au CIRAIG.
+    </div>
+    </div>
     <p class="paragraphe3">
       Ensuite, le passage au numérique permettant de réduire l’empreinte
       environnementale est un aspect avantageux. Jean-François Ménard, analyste
@@ -108,12 +215,15 @@
       (Lalonde, 2020). Avec une alternative considérablement plus écologique, le
       livre numérique est aussi éthiquement meilleur en préservant de manière
       responsable l’environnement.
+      
+    </div>
+    
     </p>
     <p class="paragraphe4">
       Néanmoins, il est important de rappeler que malgré ses nombreux avantages,
-      la lecture numériques n’est toujours pas le premier choix des étudiants.
+      la lecture numérique n’est toujours pas le premier choix des étudiants.
       Suivant l’expérience de Baron, « 92 % ont déclaré qu'il était plus facile
-      de se concentrer lorsqu'ils lisaient sur papier. » (Traduit en français,
+      de se concentrer lorsqu'ils lisaient sur papier. » (traduit de l'anglais)(
       Baron, 2020). Sachant que la lecture numérique se fait sur écran, ces
       mêmes écrans peuvent devenir des moyens de distractions malgré eux,
       contrairement aux livres physiques qui, eux, ne contiennent que des pages
@@ -123,19 +233,42 @@
       En conclusion, les aspects dynamiques et écologiques de la lecture
       numérique font de celle-ci une meilleure alternative au traditionnel. À
       l’avenir, il serait pertinent d’observer les causes entraînant ces manques
-      d’attention et difficultés de concentrations des lecteurs sur médiums
+      d’attention et difficultés de concentrations des lecteurs sur les médiums
       numériques et la manière d’y remédier.
     </p>
-    <button>Click Me!</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="questionnaire">
+    <p class="paragraphe6">
+    Après avoir lu attentivement ce commentaire critique, nous vous invitons maintenant à répondre à ce court <br> questionnaire. Pour ce faire, veuillez cliquez sur le bouton ci-dessous. Bonne chance!!
+    </p>
+    <br>
+    <br>
+    <button type="button"> <span></span> QUESTIONNAIRE</button>
     <br />
-    <img src="123.png" alt="lisant" width="450" />
+    
+
+    
     <br />
     <hr />
     <ul>
       <li>
-        Baron, N.S. (2020). Digital Reading. Handbook of Reading Research, 5(1),
-        116-136. Digital Reading | 7 | A Research Assessment | Naomi S. Baron |
-        Taylor (taylorfrancis.com)
+        Baron, N.S. (2020). <em>Digital Reading</em>. Handbook of Reading Research, 5(1),
+        116-136.
         <a
           href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781315676302-7/digital-reading-naomi-baron"
         >
@@ -143,9 +276,8 @@
         </a>
       </li>
       <li>
-        Lalonde C. (2020, Novembre 10). Pour la planète vaut-il mieux lire sur
-        papier ou en numérique ?. Pour la planète, vaut-il mieux lire sur papier
-        ou en numérique? | Le Devoir
+        Lalonde C. (2020, Novembre 10). <em>Pour la planète vaut-il mieux lire sur
+        papier ou en numérique ?. </em>
         <a
           href="https://www.ledevoir.com/lire/589417/pour-la-planete-vaut-il-mieux-lire-sur-papier-ou-en-numerique"
         >
@@ -153,23 +285,34 @@
         </a>
       </li>
       <li>
-        Octobre, S. (2013, Avril 30). La lecture à l’ère du numérique. La
-        lecture à l'ère numérique | Cairn.info (uof.ca)
+        Octobre, S. (2013, Avril 30). <em>La lecture à l’ère du numérique.</em> 
         <a href="https://cairn.uontario.ca/revue-etudes-2013-5-page-607.htm">
           Lien URL
         </a>
       </li>
-    </ul>
+    </div>
+  </ul>
     <script>
-      let ville = "Abidjan";
-      let pays = "Côte d'Ivoire";
-      let ou = "Je suis né à" + "," + " " + ville + " " + pays + ".";
-      let cité = prompt("Dans quelle cité est-tu né ?");
-      alert("Tu es né à" + cité);
-      let prénom = prompt("Quel est ton prénom ?");
-      let nom = prompt("Quel est ton omm?");
-      let nomcomplet = prénom + " " + nom;
-      alert(nomcomplet);
+      function infoButton() {
+      let prenom = prompt("Quel est ton prénom?");
+        let nom = prompt("Que est ton nom?");
+
+        alert("Merci " + prenom + " " + nom + ", j'espère que tu as bien lu le texte. Voici le questionnaire de compréhension!!");
+
+        let question1 = prompt("Selon le texte, la lecture sur papier est-elle considérée comme ennuyeuse? Veuillez répondre « vrai » ou « faux » en lettres minuscles.");
+        if (question1 === "vrai") {alert("Bonne réponse!");}
+        if (question1 === "faux") {alert("Mauvaise réponse...");}
+        let question2 = prompt("Selon Jean-François Ménard, l’empreinte environnementale du livre numérique était d’à peu près combien celle du livre papier ? Veuillez répondre en nombre entier suivi d'un « fois » ou en fraction de cette manière: « 2 fois » ou « 1/4 » (ceci est un exemple, ayez vos propres réponses).");
+        if (question2 === "1/10") {alert("Bonne réponse!");}
+        else {alert("Mauvaise réponse...");}
+        let question3 = prompt("Selon le texte, les étudiants se concentrent mieux en lisant sur quel médium: « papier » ou « téléphone » ? Écrivez vos réponses en lettres minuscules.");
+        if (question3 === "papier") {alert("Bonne réponse!");}
+        if (question3 === "téléphone") {alert("Mauvaise réponse...");}
+        alert ("Ceci est la fin du questionnaire. Nous espérons que vous avez pu en apprendre plus sur l'évolution des médiums de lecture. À la prochaine!");
+      }
+      let cliqueMoi = document.querySelector("button");
+      cliqueMoi.addEventListener("click", infoButton);
+      
     </script>
   </body>
 </html>
